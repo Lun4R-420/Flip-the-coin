@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Flip a virtual coin and randomly get Heads or Tails. Built using HTML, CSS, and JavaScript.">
 
     <link
       rel="icon"
@@ -18,16 +18,18 @@
     <title>Flip the coin | devChallenges.io</title>
 
   </head>
-  <body>
-    <h1>Flip the coin</h1>
-    <p>Press the coin or the button to flip the coin</p>
+    <main>
+      <body>
+        <h1>Flip the coin</h1>
+        <p>Press the coin or the button to flip the coin</p>
 
-    <img id="coin" src="resources/heads.svg" alt="coin" />
-    <img src="resources/shadow.svg" alt="shadow" class="shadow" />
+        <img id="coin" src="resources/heads.svg" alt="coin" width="180" height="180"/>
+        <img src="resources/shadow.svg" alt="shadow" class="shadow" width="180" height="180"/>
 
-    <p class="result"></p>
-    <button id="flipButton"">RANDOM</button>
-  </body>
+        <p class="result"></p>
+        <button id="flipButton">RANDOM</button>
+      </body>
+    </main>
   <script>
     const button = document.getElementById("flipButton");
     const coin = document.getElementById("coin");

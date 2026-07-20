@@ -1,11 +1,14 @@
-body{
-    background-color: #434658;
+main{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: "Baloo 2", sans-serif;
     min-height: 100vh;
+}
+
+body{
+    background-color: #434658;
+    font-family: "Baloo 2", sans-serif;
     height: 100%;
     margin: 0;
 }
@@ -23,7 +26,7 @@ h1{
 
 p{
     font-size: 1.5rem;
-    color: rgb(143, 142, 142);
+    color: #d1d5db;
     font-weight: 600;
 }
 
