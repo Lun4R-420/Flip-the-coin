@@ -5,6 +5,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family: "Baloo 2", sans-serif;
+    min-height: 100vh;
+    height: 100%;
 }
 
 h1{
