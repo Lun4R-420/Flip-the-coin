@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo 2:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>Flip the coin | devChallenges.io</title>
+
+  </head>
+  <body>
+    <h1>Flip the coin</h1>
+    <p>Press the coin or the button to flip the coin</p>
+
+    <img id="coin" src="resources/heads.svg" alt="coin" />
+    <img src="resources/shadow.svg" alt="shadow" class="shadow" />
+
+    <p class="result"></p>
+    <button id="flipButton" onclick="flipCoin()">RANDOM</button>
+  </body>
+  <script>
+    const button = document.getElementById("flipButton");
+    const coin = document.getElementById("coin");
+    const result = document.querySelector(".result");
+
+    button.addEventListener("click", function() {
+      const randomNumber = Math.floor(Math.random() * 2);
+      if (randomNumber === 0) {
+        coin.src = "resources/heads.svg";
+        result.textContent = "Head";
+      } else {
+        coin.src = "resources/tails.svg";
+        result.textContent = "Tail";
+      }
+    });
+  </script>
+</html>
